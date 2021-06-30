@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Interior consultant</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+      function toggle() {
+        let e = document.getElementById('nav')
+        let icon= document.getElementById('icon')
+        let body=document.getElementById('body')
+        if (e.style.display=='flex') {
+          e.style.display='none'
+          icon.innerHTML='menu'
+          body.className=''
+        } else {
+         e.style.display='flex'
+         icon.innerHTML='menu_open'
+         body.className='actived'
+        }
+
+      }
+    </script>
+  </head>
+  <body id="body">
+    <header>
+      <a href="" class="logo">This Interior</a>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href=""  class="active">Home</a>
+          </li>
+          <li>
+            <a href="">Collection</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div  class="menuHamburger" onclick="toggle()">
+         <span class="material-icons" id="icon">menu</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <div class="textArea">
+          <h2>Modern interior</h2>
+
+          <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+
+          <a href="">Read more -></a>
+        </div>
+
+        <div class="imageArea">
+          <div class="img" >
+            <img src="photo1.png">
+          </div>
+          <div class="designerInfo">
+            <div class="perfil" >
+              <div><img src="photo2.png"></div>
+              <div class="info">
+                <h4>Aliza Webber</h4>
+                <p>Interior Designer</p>
+              </div>
+            </div>
+            <div >
+              <h3>Designed in 2020 by Aliza Webber</h3>
+            </div>
+          </div>
+        </div>
+
+        <div style="clear:both;"></div>
+      </main>
+      <footer>Created by Ednaldo - devChallenges.io</footer>
+    </div>
+  </body>
+</html>
